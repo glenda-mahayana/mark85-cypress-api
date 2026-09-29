@@ -17,6 +17,8 @@
     "test": "npx cypress run"
   },
   "devDependencies": {
-    "cypress": "^16.1.0"
+    "cypress": "^16.1.0",
+    "cypress-plugin-api": "^2.12.3",
+    "mongodb": "^7.7.0"
   }
 }
