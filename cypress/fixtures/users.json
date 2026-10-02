@@ -1,0 +1,31 @@
+{
+    "login":{
+        "name": "Gabriel Silva",
+        "email": "gabrielsilva@test.com",
+        "password": "silva123"  
+    },
+    "inv_pass":{
+        "email": "ssilva@test.com",
+        "password": "123456"
+    },
+    "email_404":{
+        "email": "404@test.com",
+        "password": "123456"
+    },
+    "create":{
+        "name": "Glenda Silva",
+        "email": "gtest@test.com",
+        "password": "test@123"
+    },
+     "dup_email":{
+        "name": "Gabriel Silva",
+        "email": "gstest@test.com",
+        "password": "test@123"
+    },
+     "required":{
+        "name": "Gabriel Cueva",
+        "email":"cueva@test.com",
+        "password": "test@123"
+    }
+
+}
