@@ -1,0 +1,17 @@
+{
+    "create": {
+        "user": {
+            "name": "Tais",
+            "email": "tais@test.com",
+            "password": "test@123"
+        },
+        "task": {
+            "name": "Nova tarefa teste",
+            "tags": [
+                "Tag1",
+                "Tag2",
+                "Tag3"
+            ]
+        }
+    }
+}
