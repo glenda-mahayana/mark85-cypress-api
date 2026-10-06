@@ -13,5 +13,20 @@
                 "Tag3"
             ]
         }
+    },
+    "dup": {
+        "user": {
+            "name": "Vivi",
+            "email": "vivi@test.com",
+            "password": "test@123"
+        },
+        "task": {
+            "name": "Nova tarefa teste",
+            "tags": [
+                "Tag1",
+                "Tag2",
+                "Tag3"
+            ]
+        }
     }
 }
