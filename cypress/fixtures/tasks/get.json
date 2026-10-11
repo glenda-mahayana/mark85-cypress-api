@@ -30,5 +30,30 @@
                 ]
             }
         ]
+    },
+    "unique": {
+        "user": {
+            "name": "Felipe Silva",
+            "email": "fsilva@test.com",
+            "password": "silva123"
+        },
+        "task": {
+            "name": "Construir a Mark87",
+            "tags": [
+                "Tag1",
+                "Tag2",
+                "Tag3"
+            ]
+        }
+    },
+    "not_found": {
+        "user": {
+            "name": "Carlos Silva",
+            "email": "csilva@test.com",
+            "password": "silva123"
+        },
+        "task": {
+            "name": "Construir uma casa"
+        }
     }
 }
