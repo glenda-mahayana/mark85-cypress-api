@@ -1,0 +1,27 @@
+{
+    "update": {
+        "user": {
+            "name": "Julio Silva",
+            "email": "jsilva@test.com",
+            "password": "silva123"
+        },
+        "task": {
+            "name": "Construir um sitio na raposa",
+            "tags": [
+                "Tag1",
+                "Tag2",
+                "Tag3"
+            ]
+        }
+    },
+    "not_found": {
+        "user": {
+            "name": "Cirio Silva",
+            "email": "csilva@test.com",
+            "password": "silva123"
+        },
+        "task": {
+            "name": "Construir uma casa na raposa"
+        }
+    }
+}

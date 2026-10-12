@@ -90,3 +90,45 @@ Cypress.Commands.add('deleteTask', (taskId, token) =>{
         }).then(response => { return response })
 
 })
+
+Cypress.Commands.add('putTaskDone', (taskId, token) => {
+      cy.api({
+        url: `/tasks/${taskId}/done`,
+        method:'PUT',
+        headers:{
+            authorization: token
+        },
+        failOnStatusCode: false
+        }).then(response => { return response })
+
+})
+
+Cypress.Commands.add('purgeQueueMessages', () => {
+    cy.api({
+        url: 'https://leopard.lmq.cloudamqp.com/api/queues/bunefmzi/tasks/contents',
+        method: 'DELETE',
+        headers:{
+            authorization: 'Basic YnVuZWZtemk6MFVqajhXdG1NTkd0N2wzdUJlaXNGc0hqbUZram9JZmw='
+        },
+        failOnStatusCode: false
+    }).then(response => { return response })
+
+})
+
+Cypress.Commands.add('getMessagesQueue', () => {
+    cy.api({
+        url: 'https://leopard.lmq.cloudamqp.com/api/queues/bunefmzi/tasks/get',
+        method: 'POST',
+        body:{
+            count: 1,
+            ack_mode: 'reject_requeue_true',
+            encoding: 'auto',
+            truncate: 50000
+        },
+        headers:{
+            authorization: 'Basic YnVuZWZtemk6MFVqajhXdG1NTkd0N2wzdUJlaXNGc0hqbUZram9JZmw='
+        },
+        failOnStatusCode: false
+    }).then(response => { return response })
+
+})
