@@ -38,10 +38,15 @@ describe('POST /tasks', ()=> {
         })
 
         after(function(){
+            const {user, task} = this.tasks.create
+
             cy.wait(3000)
             cy.getMessagesQueue().then(response =>{
                 expect(response.status).to.eq(200)
-                cy.log(JSON.stringify(response.body))
+                // expect(response.body[0].payload).to.include(user.name.split('')[0])
+                // expect(response.body[0].payload).to.include(task.name)
+                // expect(response.body[0].payload).to.include(user.email)
+
             })
         })
 

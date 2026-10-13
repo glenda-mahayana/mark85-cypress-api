@@ -30,6 +30,11 @@ module.exports = defineConfig({
           }
       })
     },
-    baseUrl: 'http://localhost:3333'
+    baseUrl: 'http://localhost:3333',
+    env:{
+      amqpHost: 'https://leopard.lmq.cloudamqp.com/api/queues/bunefmzi',
+      amqpQueue: 'tasks',
+      amqpToken: 'Basic YnVuZWZtemk6MFVqajhXdG1NTkd0N2wzdUJlaXNGc0hqbUZram9JZmw='
+    } 
   },
 });
